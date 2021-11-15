@@ -1,0 +1,33 @@
+.prevailing {
+    background: #F9F9F9;
+    border-radius: 4px;
+    padding: 43px 31px 38px 70px;
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {
+        flex: 0 1 33.333%;
+    }
+    &__icon {
+        height: 43px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        margin-bottom: 26px;
+
+        i {
+            color: #2D9CEE;
+        }
+    }
+    &__icon:last-child {
+        font-size: 54px;
+    }
+    &__description {        
+        line-height: 130%;
+        color: #8A8A8F;
+        max-width: 158px;
+    }
+}

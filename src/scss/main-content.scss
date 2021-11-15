@@ -1,0 +1,8 @@
+.main-content {
+    grid-area: main-content;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "main-menu main-menu"
+        "sidebar web-content";
+    column-gap: 24px;
+}

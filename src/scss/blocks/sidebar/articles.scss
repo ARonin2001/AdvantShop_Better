@@ -1,0 +1,19 @@
+.articles {    
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__items {
+        margin-bottom: 32px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+    &__news {
+        font-size: 14px;
+        line-height: 160%;
+        color: #000000;
+    }
+}

@@ -1,0 +1,9 @@
+.aside {
+    grid-area: sidebar;
+    display: block;
+    width: 100%;
+    
+    &__order, &__articlesm, &__survey {
+        margin-bottom: 40px;
+    }
+}

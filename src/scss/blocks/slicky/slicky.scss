@@ -1,0 +1,32 @@
+.slick {
+    &-prev, &-next {
+        display: none !important;
+    }
+
+    &-dots {
+        position: absolute;
+        right: 47px;
+        bottom: 45px;
+        display: flex;
+        cursor: pointer;
+    }
+    &-dots li button {
+        display: none;
+    }
+    &-dots li::before {
+        content: '';
+        display: block;
+        background: #FFFFFF;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        opacity: 0.3;
+        
+    }
+    &-dots li:not(:last-child)::before {
+        margin-right: 12px;
+    }
+    &-dots li.slick-active::before {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,45 @@
+.popular-categories {
+    margin-top: 60px;
+
+    &__title {
+        margin-bottom: 24px;
+    }
+    
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        background: #FFFFFF;
+        max-height: 295px;
+        max-width: 280px;
+        width: 100%;
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 0 1 33.333%;
+        padding: 36px 43px 46px 57px;
+        height: 100%;
+        width: 100%;
+        font-size: 16px;
+        line-height: 140%;
+        color: #000000;
+        border: 1px solid #EFEFF4;
+        box-sizing: border-box;
+
+        &:hover {
+            border: 1px solid #2D9CEE;
+            box-sizing: border-box;
+        }
+    }
+    &__img {
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        margin-bottom: 25px;
+        height: 165px;
+    }
+}

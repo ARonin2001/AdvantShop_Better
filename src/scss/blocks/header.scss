@@ -1,0 +1,140 @@
+.header {
+    grid-area: head;
+
+}
+
+.info-organization {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 19px 0;
+    
+    &_left {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__location {
+        display: flex;
+        margin-right: 29px;
+        align-items: center;
+    }
+    &__arraw {
+        color: #666666;
+        margin-right: 12px;
+    }
+    &__city {
+        font-size: 16px;
+        line-height: 140%;
+        color: #666666;
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+    }
+    &__number, &_request-call, &__login {
+        font-size: 16px;
+        line-height: 140%;
+        color: #666666;
+    }
+    &__number {
+        margin-right: 10px;
+    }
+    &_request-call {
+        font-size: 12px;
+    }
+}
+
+// ---------- SEARCH --------------------------------------
+.header__tovar {
+    // display: flex;
+    // align-items: center;
+    display: grid;
+    grid-template-areas: "tovar-left tovar-right";
+    grid-gap: 0 24px;
+    grid-template-columns: 1fr 3fr;
+    padding: 26px 0;
+
+    // LOGO
+    &_left {
+        grid-area: tovar-left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // CONTENT
+    &_right {
+        grid-area: tovar-right;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &-search {
+        position: relative;
+        max-width: 399px;
+        min-width: 399px;
+    }
+    &-input {
+        width: 100%;
+        padding: 13px 0 13px 44px;
+        background: #F9F9F9;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 140%;
+
+        &::placeholder {
+            color: #C8C7CC;
+        }
+    }
+    &_search-btn {
+        position: absolute;
+        top: 11px;
+        left: 13px;
+        background: #F9F9F9;
+    }
+    &_search-btn {
+        .icon-search:before {font-size: 24px; color: #C8C7CC;}
+    }
+
+    &-shopping-card {
+        display: flex;
+        align-items: center;
+    }
+    &-icons {
+        display: flex;
+        align-items: center;
+
+        a {color: $blue-color; font-size: 24px;}
+        a:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    &-basket-container {
+        position: relative;
+        margin-right: 12px;
+    }
+    &-count {
+        position: absolute;
+        left: 10px;
+        bottom: 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        background: $blue-color;
+        border: 3px solid #FFFFFF;
+        border-radius: 50%;
+        color: #FFFFFF;
+        font-size: 12px;
+        line-height: 140%;
+        text-align: center;
+    }
+    &-link {
+        font-size: 16px;
+    }
+
+}
+

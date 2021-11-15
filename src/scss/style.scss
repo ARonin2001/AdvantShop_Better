@@ -1,0 +1,76 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("fonts/#{$file_name}.woff") forma("woff"), url("fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+}
+
+// RESET styles
+@import 'reset';
+
+// Fonts
+@import 'fonts';
+// icons fonts
+@import 'icon_fonts';
+// BASE
+@import 'base/animations';
+@import 'base/media';
+@import 'base/mixins';
+@import 'base/variables';
+
+body {
+    width: 100%;
+    font-family: 'Rubik';
+}
+
+.title {
+    font-size: 24px;
+    line-height: 130%;
+}
+.sub-title {
+    font-size: 12px;
+    line-height: 160%;
+    color: #8A8A8F;
+}
+
+.btn {
+    padding: 8px 20px;
+    background: $blue-color;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+// BLOCKS //
+
+// container
+@import 'container';
+@import 'blocks/wrapper';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/main';
+@import 'main-content';
+
+// sidebar
+@import 'blocks/sidebar/sidebar';
+@import 'blocks/sidebar/catalog';
+@import 'blocks/sidebar/articles';
+@import 'blocks/sidebar/order';
+@import 'blocks/sidebar/survey';
+
+// slicky
+@import 'blocks/slicky/slicky';
+
+// content
+@import 'blocks/content/content';
+@import 'blocks/content/baner/baner';
+@import 'blocks/content/prevailing';
+@import 'blocks/content/popular_category';
+
+@import 'blocks/footer';
+
+
+
+

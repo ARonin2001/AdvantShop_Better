@@ -1,0 +1,11 @@
+.main {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "head head"
+        "main-content main-content"
+        "footer footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100%;
+    max-width: 1151px;
+}

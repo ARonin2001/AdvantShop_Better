@@ -1,0 +1,15 @@
+@media(max-width: 1024px) {
+    .header {
+        padding: 0 12px;
+    }
+}
+
+@media(max-width: 550px) {
+    .info-organization {
+        justify-content: space-around;
+        &__phone {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+}
