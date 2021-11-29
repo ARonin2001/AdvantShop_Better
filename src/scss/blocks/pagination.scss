@@ -1,0 +1,80 @@
+.pagination {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    //pagination buttons
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 50px;
+        min-height: 50px;
+        background: #F9F9F9;
+        border: 1px solid #EFEFF4;
+        box-sizing: border-box;
+        border-radius: 4px;
+
+        span {
+            font-size: 14px;
+            line-height: 160%;
+            color: $blue-color;
+        }
+
+        &:not(:last-child) {
+            margin-right: 4px;
+        }
+    }
+    &__prev, &__page:first-child {
+        span {
+            color: #C8C7CC;
+        }
+        &:hover {
+            span {color: $blue-color;}
+        }
+    }
+    &__prev {
+        transform: rotate(180deg);
+    }
+    &__next:hover {
+        background: $blue-color;
+        span {color: #FFFFFF;}
+    }
+    &__prev, &__next {
+        span {
+            font-size: 25px;
+            transform: translateY(5%);
+        }
+    }
+
+    // right
+    &_right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    &__count-tovars {
+        color: #000000;
+        margin-right: 60px;
+    }
+    &__btn-more {
+        background: #F9F9F9;
+        border: 1px solid #EFEFF4;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    &__btn-more {
+        color: $blue-color;
+        padding: 14px 28px 14px 30px;
+    }
+}

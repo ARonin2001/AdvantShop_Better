@@ -30,3 +30,41 @@
         opacity: 1;
     }
 }
+
+// tovars
+.tovars {
+    .slick {
+        &-next, &-prev {
+            position: absolute;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            top: 76px;
+            z-index: 20;
+            line-height: 25px;
+
+
+            i {
+                color: $blue-color;
+                font-size: 25px;
+            }
+        }
+        &-prev {
+            opacity: 0.4;
+            right: 65px;
+            transform: rotate(180deg);
+            
+        }
+        &-next {
+            opacity: 0.8;
+            right: 8px;
+        }
+        
+    }
+    
+
+}

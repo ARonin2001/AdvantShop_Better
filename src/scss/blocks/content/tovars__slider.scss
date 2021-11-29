@@ -1,0 +1,46 @@
+// slider preview of images
+.hvr {
+    &__images {
+        position: relative;
+    }
+      
+    &__sectors {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+    }
+
+    &__sector {
+        flex-grow: 1;
+    }    
+
+    //dots
+    &__dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__dot {
+        width: 30px;
+        border: 1px solid #C8C7CC;
+        margin: 10px 2px 20px 0;
+    }
+    &__dot--active {
+        border-color: $blue-color;
+    }
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 213px;
+    
+    .image {
+        display: block;
+    }
+}

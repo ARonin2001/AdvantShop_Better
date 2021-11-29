@@ -1,0 +1,53 @@
+.simple {
+    &-rating {
+        position: relative;
+        font-size: 12px;
+        display: inline-block;
+
+        &::before {
+            content: '★★★★★';
+            display: block;
+        }
+
+        &__items {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        &__item {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            opacity: 0;
+            visibility: hidden;
+            top: 0;
+            left: 0;
+
+            &:checked, &:checked ~ .simple-rating__label {
+                color: #FFBE1E;
+            }
+        }
+
+        &__label {
+            flex: 0 0 20%;
+            height: 100%;
+            cursor: pointer;
+            color: #EFEFF4;
+
+            &:before {
+                content: '★';
+                display: block;
+                transition: color 0.1s ease 0s;
+            }
+
+            &:hover, &:hover ~ .simple-rating__label,
+            &:checked ~ .simple-rating__label:hover {
+                color: #f0d860;
+            }
+        }
+    }
+}
