@@ -1,0 +1,23 @@
+.news {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_left {
+        max-width: 517px;
+    }
+    &__title {
+        max-width: 484px;
+    }
+    &__description {
+        margin-top: 24px;
+        line-height: 160%;
+    }
+
+    &__btn-more {
+        display: inline-block;
+        margin-top: 35px;
+        color: $blue-color;
+    }
+}
