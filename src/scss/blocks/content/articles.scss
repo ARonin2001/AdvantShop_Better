@@ -1,0 +1,37 @@
+.content-articles {
+
+    &__body {
+        margin-top: 39px;
+    }
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__column {
+        flex: 1 1 33.333%;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 260px;
+        height: 100%;
+    }
+    &__item-img {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 161px;
+    }
+    &__sub-title {
+        font-size: 18px;
+        line-height: 150%;
+        margin-top: 28px;
+    }
+    &__desciption {
+        line-height: 160%;
+        color: #666666;
+        margin-top: 18px;
+    }
+    
+}
