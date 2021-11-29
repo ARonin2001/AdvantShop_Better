@@ -233,6 +233,10 @@ body {
   max-width: 1130px;
 }
 
+._container__footer {
+  max-width: 1200px;
+}
+
 .wrapper {
   overflow: hidden;
   display: -webkit-box;
@@ -246,6 +250,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 100%;
+}
+
+.wrapper__footer {
+  margin-top: 107px;
 }
 
 .header {
@@ -910,6 +918,10 @@ body {
 .content__content-articles,
 .content__benefits {
   margin-top: 60px;
+}
+
+.content__subscribe-news {
+  margin-top: 107px;
 }
 
 .baner__item {
@@ -1608,6 +1620,61 @@ body {
   display: inline-block;
   color: #2D9CEE;
   margin-top: 30px;
+}
+
+.subscribe-news {
+  width: 100%;
+  background: #2D9CEE;
+  height: 147px;
+}
+
+.subscribe-news__container {
+  width: 100%;
+  height: 100%;
+}
+
+.subscribe-news__container,
+.subscribe-news__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe-news__title {
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-right: 24px;
+}
+
+.subscribe-news__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe-news__input {
+  width: 400px;
+  padding: 9px 0 9px 16px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  line-height: 160%;
+  color: #8A8A8F;
+  margin-right: 8px;
+}
+
+.subscribe-news__btn {
+  padding: 8px 20px;
+  background: #00186A;
+  border-radius: 4px;
+  line-height: 160%;
+  color: #FFFFFF;
 }
 
 .footer {
