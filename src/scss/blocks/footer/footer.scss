@@ -1,5 +1,89 @@
 .footer {
     grid-area: footer;
     
+    &__container {
+        padding: 93px 29px 100px 36px;
+        margin: 0 auto;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &_top {
+        display: flex;
+        justify-content: space-between;
+    }
     
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 168px;
+    }
+    &__item:not(:last-child) {
+        margin-right: 24px;
+    }
+    &__sub-title {
+        color: #C8C7CC;
+    }
+    &__li {
+        margin-top: 26px;
+    }
+    &__link {
+        line-height: 130%;
+        color: #8A8A8F;
+    }
+
+    // certificate
+    &__certificate {
+        padding: 17px 0 19px 22px;
+        background: #E74343;
+        border-radius: 4px;
+        max-height: 150px;
+        min-width: 263px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-title {
+            font-size: 18px;
+            line-height: 130%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+
+    // bottom
+    &_bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 123px;
+
+        &-links {
+            display: flex;
+        }
+        &-link {
+            line-height: 130%;
+            color: $blue-color;
+
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+    &__corporation {
+        line-height: 130%;
+        color: #C8C7CC;
+    }
+    &__pay {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        &-item {
+            margin-right: 20px;
+        }
+    }
 }
